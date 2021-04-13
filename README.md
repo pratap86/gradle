@@ -11,6 +11,20 @@
   - Daemon - keeps the prev build information
   - Plugins - jar, war, jacoco
   - bootRun
+#### Gradle CLI Commands
+
+|Commands|Description|
+|---|---|
+|`gradle --rerun-task build`|forcefully run all the tasks|
+|`gradle tasks --all`|Display all the tasks|
+|`gradle build --daemon`|kick start the daemon|
+
+#### Gradle Phases
+|Phase|Description|
+|---|---|
+|`Initialization`|figure out the project, is it multi-mudule or single module project|
+|`Configuration`|executes the task in acyclic graph|
+|`Execution`|Compiled, Testted, Jar/War|
 
 #### Important facts about Gradle are;
   - Gradle uses the groovy or kotlin to write a gradle.build file
