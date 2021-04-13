@@ -1,0 +1,4 @@
+com/pratap/gradle/SpringbootdemoApplication.java
+ com.pratap.gradle.SpringbootdemoApplication
+com/pratap/gradle/controllers/HelloGradleController.java
+ com.pratap.gradle.controllers.HelloGradleController
