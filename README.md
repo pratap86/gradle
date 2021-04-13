@@ -23,6 +23,8 @@
 |`task1.finalizedBy task2`|task1 follow by task1|
 |`gradle :web:clean`|only specific project did the clean in multi-module project|
 |`allprojects{}`|Adding task across the modules|
+|`gradle project-name:dependencies`|display all the dependencies|
+|`?`|elvis operator in groovy|
 
 #### Gradle Phases
 |Phase|Description|
