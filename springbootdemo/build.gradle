@@ -1,0 +1,24 @@
+plugins {
+	id 'org.springframework.boot' version "${springbootVersion}"
+	id 'io.spring.dependency-management' version "${springDependencyVersion}"
+	id 'java'
+}
+
+group = "${group}"
+version = "${version}"
+sourceCompatibility = "${javaVersion}"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}
+}
+
+test {
+	useJUnitPlatform()
+}
