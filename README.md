@@ -18,12 +18,17 @@
 |`gradle --rerun-task build`|forcefully run all the tasks|
 |`gradle tasks --all`|Display all the tasks|
 |`gradle build --daemon`|kick start the daemon|
+|`gradle build --no-daemon`|No daemon|
+|`task1.dependsOn task2`|task2 executes before task1|
+|`task1.finalizedBy task2`|task1 follow by task1|
+|`gradle :web:clean`|only specific project did the clean in multi-module project|
+|`allprojects{}`|Adding task across the modules|
 
 #### Gradle Phases
 |Phase|Description|
 |---|---|
 |`Initialization`|figure out the project, is it multi-mudule or single module project|
-|`Configuration`|executes the task in acyclic graph|
+|`Configuration`|executes the task in DAG - Direct Asyclic Graph|
 |`Execution`|Compiled, Testted, Jar/War|
 
 #### Important facts about Gradle are;
